@@ -4,5 +4,20 @@
 
 # Descripción del proyecto
 Creemos que nuestra solución al reto es muy buena, ya que utilizamos listas para poder separar en varios pedazos e identificar cada token del contenido en el archivo .json, toda la información necesaria para construir el archivo HTML.
-Por ser un acercamiento funcional para resolver el problema, no utilizamos ciclos iterativos, solo recursivos; por lo que la complejidad temporal es de O(n). n palabras que hay en el archivo, iteraciones Dado al tiempo que tuvimos para realizar el proyecto nuestra complejidad no es tan eficiente, pero una posible solucion para esto, sería buscar todos los mismos tipos de variables en una sola iteración, para asi poder terminar los ciclos de manera mas rápida y asi obtener una complejidad de O(logn).
-explicar expresiones regulares, decision
+Por ser un acercamiento funcional para resolver el problema, no utilizamos ciclos iterativos, solo recursivos; por lo que la complejidad temporal es de O(n). "n" es equivalente al tamaño del archivo json (iteraciones).
+EXPRESIONES REGULARES:
+- [(regexp-match #px"^[\\d]+" json-string)]
+Busca un entero
+- [(regexp-match #px"^true|false|null" json-string)]
+Busca las palabras "true", "false" y "null"
+- [(regexp-match #px"^(\"[\\w: -,\\.]+?\")(:)" json-string)]
+Busca las llaves, ya que busca cualquier a-z, A-Z, 0-9, ":", "," , "." , ' " ' en unngrupo y en otro ":"
+- [(regexp-match #px"^\"[\\w: ,\\.-]+?\"" json-string)]
+Busca los strings, ya que busca cualquier a-z, A-Z, 0-9, ":", "," , "." , ' " '
+- [(regexp-match #px"^[,\\[\\]{}():]" json-string)]
+busca los caracteres , \\ {} () :
+- [(regexp-match #px"^[\r\n]+" json-string)]
+busca los enters
+- [(regexp-match #px"^\\s" json-string)]
+busca los espacios
+, decision
