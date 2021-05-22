@@ -1,0 +1,23 @@
+* {
+    background-color: rgb(31, 31, 31);
+}
+
+.specialchar {
+    color: #87dcfe;
+}
+
+.integer {
+    color: #0e966d;
+}
+
+.specialvar {
+    color: #6895f1;
+}
+
+.key {
+    color: #c56c95;
+}
+
+.string {
+    color: #a72324;
+}
