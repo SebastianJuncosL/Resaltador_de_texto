@@ -4,4 +4,5 @@
 
 # Descripción del proyecto
 Creemos que nuestra solución al reto es muy buena, ya que utilizamos listas para poder separar en varios pedazos e identificar cada token del contenido en el archivo .json, toda la información necesaria para construir el archivo HTML.
-Por ser un acercamiento funcional para resolver el problema, no utilizamos ciclos iterativos, solo recursivos; por lo que la complejidad temporal es de O(n). Dado al tiempo que tuvimos para realizar el proyecto nuestra complejidad no es tan eficiente, pero una posible solucion para esto, sería buscar todos los mismos tipos de variables en una sola iteración, para asi poder terminar los ciclos de manera mas rápida y asi obtener una complejidad de O(logn).
+Por ser un acercamiento funcional para resolver el problema, no utilizamos ciclos iterativos, solo recursivos; por lo que la complejidad temporal es de O(n). n palabras que hay en el archivo, iteraciones Dado al tiempo que tuvimos para realizar el proyecto nuestra complejidad no es tan eficiente, pero una posible solucion para esto, sería buscar todos los mismos tipos de variables en una sola iteración, para asi poder terminar los ciclos de manera mas rápida y asi obtener una complejidad de O(logn).
+explicar expresiones regulares, decision
