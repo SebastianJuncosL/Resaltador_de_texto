@@ -37,6 +37,7 @@ Busca los espacios
 Tomamos la decisión para la sintaxis de cada expresión regular, al probar cada una en un simulador llamado Regex101 que nos muestra lo que haría nuestra expresión, iluminando de color azul lo seleccionado. Un ejemplo del simulador se muestra en la imagen de abajo.
 <img width="1102" alt="Screen Shot 2021-05-21 at 20 11 40" src="https://user-images.githubusercontent.com/57368415/119210400-97748a00-ba71-11eb-8db4-27ae4e773a3c.png">
 
-## Implementación del programa
-SS DEL RESULTADO 
+## Implementación del programa 
+![Screenshot 2021-05-21 211312](https://user-images.githubusercontent.com/56135009/119211714-65ffbc80-ba79-11eb-9369-d42ce30ed9d0.png)
+
 
