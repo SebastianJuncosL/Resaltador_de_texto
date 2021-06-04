@@ -9,7 +9,7 @@
     - [EXPRESIONES REGULARES](#expresiones-regulares)
     - [Implementación del programa](#implementación-del-programa)
 - [Resaltador de sintaxis paralelo](#resaltador-de-sintaxis-paralelo)
-    - [Descripción del proyecto](#descripción-del-proyecto)
+    - [Descripción paralelo](#descripción-paralelo)
     - [Implementación paralelo](#implementación-paralelo)
     - [Complejidad](#complejidad)
     - [Tiempos de ejecución](#tiempos-de-ejecución)
@@ -59,7 +59,7 @@ Tomamos la decisión para la sintaxis de cada expresión regular, al probar cada
 
 # Resaltador de sintaxis paralelo
 
-## Descripción del proyecto
+## Descripción paralelo
 
 En esta parte, tuvimos que hacer uso del programa de la actividad 3.4 (Resaltador de sintaxis) y extender este programa para que ahora también fuera capaz de identificar dentro de un directorio todos los archivos de terminación .json de manera secuencial. Este programa realiza el mismo proceso pero ahora al hacer uso de funciones future se convierte en paralelo. Elegimos hacer una función (find-files) que leyera los archivos del directorio e identificara a través de un loop con una expresión regular si hay archivos con terminación .json existentes, ésta nos regresa una lista de archivos. 
 La expresión regular usada fue:
