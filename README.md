@@ -2,10 +2,27 @@
 ## Integrantes equipo 8
 > Ximena Gonzalez A01028604, Sebastian Juncos A01022629, Carolina Ortega A01025254
 
-# Descripción del proyecto
+# Contenidos
+
+- [Resaltador de sintaxis](#resaltador-de-sintaxis)
+    - [Descripción del proyecto](#descripción-del-proyecto)
+    - [EXPRESIONES REGULARES](#expresiones-regulares)
+    - [Implementación del programa](#implementación-del-programa)
+- [Resaltador de sintaxis paralelo](#resaltador-de-sintaxis-paralelo)
+    - [Descripción del proyecto](#descripción-del-proyecto)
+    - [Implementación paralelo](#implementación-paralelo)
+    - [Complejidad](#complejidad)
+    - [Tiempos de ejecución](#tiempos-de-ejecución)
+- [Reflexión](#reflexión)
+
+# Resaltador de sintaxis
+
+## Descripción del proyecto 
 Creemos que nuestra solución al reto es muy buena, ya que utilizamos listas para poder separar en varios pedazos e identificar cada token del contenido en el archivo .json, toda la información necesaria para construir el archivo HTML.
 Por ser un acercamiento funcional para resolver el problema, no utilizamos ciclos iterativos, solo recursivos; por lo que la complejidad temporal es de O(n). "n" es equivalente al tamaño del archivo json (iteraciones).
-## EXPRESIONES REGULARES:
+
+
+## EXPRESIONES REGULARES
 -  [(regexp-match #px"^[\\d]+" json-string)]
 
  Busca un entero
@@ -40,4 +57,41 @@ Tomamos la decisión para la sintaxis de cada expresión regular, al probar cada
 ## Implementación del programa 
 ![Screenshot 2021-05-21 211312](https://user-images.githubusercontent.com/56135009/119211714-65ffbc80-ba79-11eb-9369-d42ce30ed9d0.png)
 
+# Resaltador de sintaxis paralelo
 
+## Descripción del proyecto
+
+En esta parte, tuvimos que hacer uso del programa de la actividad 3.4 (Resaltador de sintaxis) y extender este programa para que ahora también fuera capaz de identificar dentro de un directorio todos los archivos de terminación .json de manera secuencial. Este programa realiza el mismo proceso pero ahora al hacer uso de funciones future se convierte en paralelo. Elegimos hacer una función (find-files) que leyera los archivos del directorio e identificara a través de un loop con una expresión regular si hay archivos con terminación .json existentes, ésta nos regresa una lista de archivos. 
+La expresión regular usada fue:
+`regexp-match? #px".json$"`
+
+values-files funciona como una lista vacía a la que se le irán agregando los archivos encontrados en el directorio que cumplan con la condición dada.
+Se uso la siguiente expresión para determinar que se recorriera el directorio:
+`(map path->string (directory-list))`
+
+Para cumplir con el que el programa fuera paralelo usamos la función de future, la cual se encarga de optimizar el tiempo y hacer uso de los núcleos de la computadora y acelerar el proceso. 
+Definimos 2 funciones:
+make-future se encarga de llamar al main, que se encarga de que nuestros archivos sean transformados a html para su visualización. 
+La función lambda nos ayuda a definir que la función future deberá de tomar en cuenta a main y al archivo en el que estamos.
+` (future (lambda()(main current-file)))`
+
+divide-in-futures se encarga de definir que hacer la función anterior por todos los archivos .json encontrados y eso lo logramos con map, la cual nos ayuda a que la lista de los archivos pase por la función main que al final pasa a los archivos a html. La función de futures se inicializa con touch.
+`(define futures (map make-future (find-files)))
+  (map touch futures)`
+  
+  
+## Implementación paralelo
+
+Resultados obtenidos: 
+
+## Complejidad
+
+jcdjcheiujwnschewcuwehfcwe
+
+## Tiempos de ejecución
+
+jnjncjewndw
+
+# Reflexión
+
+bcdjcdkjncjkdac
