@@ -63,7 +63,7 @@ Tomamos la decisión para la sintaxis de cada expresión regular, al probar cada
 
 En esta parte, tuvimos que hacer uso del programa de la actividad 3.4 (Resaltador de sintaxis) y extender este programa para que ahora también fuera capaz de identificar dentro de un directorio todos los archivos de terminación .json de manera secuencial. Este programa realiza el mismo proceso pero ahora al hacer uso de funciones future se convierte en paralelo. Elegimos hacer una función (find-files) que leyera los archivos del directorio e identificara a través de un loop con una expresión regular si hay archivos con terminación .json existentes, ésta nos regresa una lista de archivos. 
 La expresión regular usada fue:
-`regexp-match? #px".json$"`
+```regexp-match? #px".json$"```
 
 values-files funciona como una lista vacía a la que se le irán agregando los archivos encontrados en el directorio que cumplan con la condición dada.
 Se uso la siguiente expresión para determinar que se recorriera el directorio:
