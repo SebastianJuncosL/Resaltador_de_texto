@@ -91,7 +91,7 @@ Resultados obtenidos:
 
 ## Complejidad
 
-Las funciones loop funcionan como complejidad temporal O(n) ya que actúa en los ciclos de una manera recursiva. 
+Las funciones loop funcionan como complejidad temporal O(n) ya que actúa en los ciclos de una manera recursiva. En el caso de la complejidad espacial, también es O(n) porque generamos listas que son proporcionales a la lista de archivos .json. 
 
 ## Tiempos de ejecución
 
