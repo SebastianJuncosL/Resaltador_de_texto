@@ -97,6 +97,6 @@ Speedup obtenido:
 # Reflexión
 
 Agrega además una breve reflexión sobre las implicaciones éticas que el tipo de tecnología que desarrollaste pudiera tener en la sociedad.
-Este tipo de tecnología puede ayudar a muchas personas ya que para muchas generaciones hacer uso de la tecnología es difícil, especialmente los dispositivos como celulares y computadoras que hoy en día ya que aunque son amigables para que los usuarios las usen fácilmente en su vida diaria, es algo muy nuevo que nunca les enseñaron a usar. 
-El poder ser capaces de diferenciar cosas para ellos como en el programa, diferenciar con colores diferentes expresiones, les puede facilitar el uso y entendimiento de el funcionamiento básico de ellos.
+Este tipo de tecnología puede ayudar a muchas personas ya que para muchas generaciones hacer uso de la tecnología es difícil, especialmente los dispositivos como celulares y computadoras que usamos hoy en día, ya que aunque son amigables para que los usuarios las usen fácilmente en su vida diaria, es algo muy nuevo que nunca les enseñaron a usar. 
+El poder ser capaces de diferenciar cosas para ellos como en el caso de este programa, diferenciar con colores diferentes expresiones, les puede facilitar el uso y entendimiento del funcionamiento básico de estos.
 
