@@ -84,14 +84,19 @@ divide-in-futures se encarga de definir que hacer la función anterior por todos
 
 Resultados obtenidos: 
 
+
 ## Complejidad
 
-jcdjcheiujwnschewcuwehfcwe
+Las funciones loop funcionan como complejidad On ya que actúa de una manera recursiva. 
 
 ## Tiempos de ejecución
 
-jnjncjewndw
+Speedup obtenido:
+
 
 # Reflexión
 
-bcdjcdkjncjkdac
+Agrega además una breve reflexión sobre las implicaciones éticas que el tipo de tecnología que desarrollaste pudiera tener en la sociedad.
+Este tipo de tecnología puede ayudar a muchas personas ya que para muchas generaciones hacer uso de la tecnología es difícil, especialmente los dispositivos como celulares y computadoras que hoy en día ya que aunque son amigables para que los usuarios las usen fácilmente en su vida diaria, es algo muy nuevo que nunca les enseñaron a usar. 
+El poder ser capaces de diferenciar cosas para ellos como en el programa, diferenciar con colores diferentes expresiones, les puede facilitar el uso y entendimiento de el funcionamiento básico de ellos.
+
