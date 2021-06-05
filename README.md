@@ -87,7 +87,7 @@ Resultados obtenidos:
 
 ## Complejidad
 
-Las funciones loop funcionan como complejidad On ya que actúa de una manera recursiva. 
+Las funciones loop funcionan como complejidad temporal O(n) ya que actúa en los ciclos de una manera recursiva. 
 
 ## Tiempos de ejecución
 
