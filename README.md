@@ -63,19 +63,23 @@ Tomamos la decisión para la sintaxis de cada expresión regular, al probar cada
 
 En esta parte, tuvimos que hacer uso del programa de la actividad 3.4 (Resaltador de sintaxis) y extender este programa para que ahora también fuera capaz de identificar dentro de un directorio todos los archivos de terminación .json de manera secuencial. Este programa realiza el mismo proceso pero ahora al hacer uso de funciones future se convierte en paralelo. Elegimos hacer una función (find-files) que leyera los archivos del directorio e identificara a través de un loop con una expresión regular si hay archivos con terminación .json existentes, ésta nos regresa una lista de archivos. 
 La expresión regular usada fue:
+
 ```regexp-match? #px".json$"```
 
 values-files funciona como una lista vacía a la que se le irán agregando los archivos encontrados en el directorio que cumplan con la condición dada.
 Se uso la siguiente expresión para determinar que se recorriera el directorio:
+
 `(map path->string (directory-list))`
 
 Para cumplir con el que el programa fuera paralelo usamos la función de future, la cual se encarga de optimizar el tiempo y hacer uso de los núcleos de la computadora y acelerar el proceso. 
 Definimos 2 funciones:
 make-future se encarga de llamar al main, que se encarga de que nuestros archivos sean transformados a html para su visualización. 
 La función lambda nos ayuda a definir que la función future deberá de tomar en cuenta a main y al archivo en el que estamos.
+
 ` (future (lambda()(main current-file)))`
 
 divide-in-futures se encarga de definir que hacer la función anterior por todos los archivos .json encontrados y eso lo logramos con map, la cual nos ayuda a que la lista de los archivos pase por la función main que al final pasa a los archivos a html. La función de futures se inicializa con touch.
+
 `(define futures (map make-future (find-files)))
   (map touch futures)`
   
